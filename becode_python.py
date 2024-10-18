@@ -119,3 +119,27 @@ class TestNotebook(unittest.TestCase):
 
 
 unittest.main(argv=[""], verbosity=2, exit=False)
+
+translate ={}
+translate ["here"] = "ici"
+translate ["work"] = "work"
+translate ["programming"] = "programmation"
+translate ["pleasure"] = "plaisir"
+translate ["learn"] = "apprendre"
+translate ["career"] = "carriere"
+sentence = ["I",  "am", "the", "master", "of", "the", "world"]
+universal_number = "The universal number is 42"
+heroes = {"Superman": "Clark Kent", "Batman": "Bruce Wayne", "Spiderman": "Tony Parker"}
+definition = heroes.values()
+print(list(definition))
+keys = heroes.keys()
+print(list(keys))
+heroes ["Spiderman"] = "Peter Parker"
+print(heroes)
+products = {"Laser sword": 229.0,"Mitendo DX": 127.30,"Linux cushion": 74.50,"Goldorak briefs": 29.90,"Nextpresso station": 184.60}
+print(products)
+sum_products = sum(products.values())
+print(sum_products)
+
+products.pop("Laser sword")
+print(products)
