@@ -143,3 +143,84 @@ print(sum_products)
 
 products.pop("Laser sword")
 print(products)
+
+print("voila la liste")
+students = [
+    "Merouane",
+    "Baptiste",
+    "Caroline",
+    "Joe",
+    "Sophie",
+    "Nathan",
+    "Raphaël",
+    "Axel",
+    "Mathieu",
+    "Adrien",
+]
+students_trie = sorted(students)
+for x in students_trie:
+    print(x)
+
+print("voila les 2 nom qui commance par M")
+for x in students:
+    if x.startswith("M"):
+        print(x)
+
+print("voila la liste de 0 a 15 non inclus")
+for i in range(15):
+    print(i)
+
+print("voila la bouble for qui affiche de 1 a 10 inclus mais qui s'arret a 5")
+for i in range(1,11):
+    if i == 5:
+        break
+    print(i)
+
+print("voila la bouvle for qui affiche de 1 a 10 inclus mais qui continue apres 5 avec une modification")
+for i in range(1, 11):
+    if i <= 5:
+        print(i)
+    else:
+        print(f"{i} on continue")
+
+list_nbr = [17, 38, 10, 25, 72]
+
+list_nbr.sort()
+print(list_nbr)
+
+list_nbr = [17, 38, 10, 25, 72]
+list_nbr.append(12)
+print(list_nbr)
+
+list_nbr.reverse()
+print(list_nbr)
+
+index_dernier = len(list_nbr) - 1
+print(index_dernier)
+
+for i in range(len(list_nbr)):
+    if list_nbr[i] == 38:
+        list_nbr.remove(38)
+        break
+print(list_nbr)
+
+sous_list =list_nbr[1:3]
+print(sous_list)
+
+sous_list_2 = list_nbr[:2]
+print(sous_list_2)
+
+sous_list_3 = list_nbr[2:]
+print(sous_list_3)
+
+sous_list_complet = list_nbr[:]
+print(sous_list_complet)
+
+last_element = list_nbr[-1]
+print(last_element)
+
+
+
+
+
+
